@@ -16,18 +16,17 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    // Navigate to Timer Screen
     public void openTimerScreen(View view) {
         startActivity(new Intent(this, TimerActivity.class));
     }
 
-    // Navigate to Sound Settings
+
     public void openSoundSettings(View view) {
         startActivity(new Intent(this, SoundSettingsActivity.class));
     }
 
-    // Navigate to Timer History
+
     public void openTimerHistory(View view) {
-        startActivity(new Intent(this, TimerHistoryActivity.class));
+        startActivity(new Intent(this, TimeHistoryActivity.class));
     }
 }

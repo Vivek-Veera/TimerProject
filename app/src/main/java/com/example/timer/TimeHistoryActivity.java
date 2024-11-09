@@ -7,7 +7,7 @@ import android.widget.SimpleCursorAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TimerHistoryActivity extends AppCompatActivity {
+public class TimeHistoryActivity extends AppCompatActivity {
     private DatabaseHelper databaseHelper;
 
     @Override

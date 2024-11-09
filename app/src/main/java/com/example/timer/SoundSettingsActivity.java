@@ -25,19 +25,18 @@ public class SoundSettingsActivity extends AppCompatActivity {
             if (mediaPlayer != null) {
                 mediaPlayer.release();
             }
-            switch (checkedId) {
-                case R.id.radioSound1:
-                    mediaPlayer = MediaPlayer.create(this, R.raw.sound1);
-                    break;
-                case R.id.radioSound2:
-                    mediaPlayer = MediaPlayer.create(this, R.raw.sound2);
-                    break;
-                case R.id.radioSound3:
-                    mediaPlayer = MediaPlayer.create(this, R.raw.sound3);
-                    break;
+            if (checkedId == R.id.radioSound1) {
+                mediaPlayer = MediaPlayer.create(this, R.raw.sound1);
+            } else if (checkedId == R.id.radioSound2) {
+                mediaPlayer = MediaPlayer.create(this, R.raw.sound2);
+            } else if (checkedId == R.id.radioSound3) {
+                mediaPlayer = MediaPlayer.create(this, R.raw.sound3);
             }
-            mediaPlayer.start();
+            if (mediaPlayer != null) {
+                mediaPlayer.start();
+            }
         });
+
 
         Button saveButton = findViewById(R.id.btn_save_sound);
         saveButton.setOnClickListener(this::saveSelectedSound);

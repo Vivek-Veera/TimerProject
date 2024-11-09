@@ -32,7 +32,7 @@ public class TimerActivity extends AppCompatActivity {
         pauseButton = findViewById(R.id.btn_pause);
         resetButton = findViewById(R.id.btn_reset);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.default_sound);
+        mediaPlayer = MediaPlayer.create(this, R.raw.sound1);
 
         startButton.setOnClickListener(v -> startTimer());
         pauseButton.setOnClickListener(v -> pauseTimer());
